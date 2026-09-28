@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-09-28T01:05:11.089607+00:00",
+  "metrics": {
+    "n_runs": 8,
+    "successes": 7,
+    "success_rate": 0.875,
+    "mean_e2e_latency_ms": 47.99,
+    "median_e2e_latency_ms": 50.35,
+    "mean_steps_per_task": 4,
+    "tool_calls": 8,
+    "tool_errors": 1,
+    "tool_error_rate": 0.125,
+    "grounded_runs": 5,
+    "groundedness_rate": 0.625,
+    "mean_claim_coverage": 0.5,
+    "groundedness_threshold": 0.5,
+    "total_tokens_in": 174,
+    "total_tokens_out": 142,
+    "per_scenario": [
+      {
+        "scenario_id": "pricing-growth",
+        "question": "What does the Growth plan cost per month?",
+        "success": true,
+        "final_answer": "The Growth plan costs $29/seat/mo.",
+        "n_steps": 4,
+        "e2e_latency_ms": 51.978,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": true,
+        "claim_coverage": 0.5
+      },
+      {
+        "scenario_id": "math-percent",
+        "question": "What is 15% of 240?",
+        "success": true,
+        "final_answer": "15% of 240 = 36.0.",
+        "n_steps": 4,
+        "e2e_latency_ms": 10.319,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": false,
+        "claim_coverage": 0.0
+      },
+      {
+        "scenario_id": "weather-berlin",
+        "question": "What's the weather in Berlin?",
+        "success": true,
+        "final_answer": "The weather in Berlin is 18C, partly cloudy.",
+        "n_steps": 4,
+        "e2e_latency_ms": 80.212,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": true,
+        "claim_coverage": 0.6
+      },
+      {
+        "scenario_id": "sla",
+        "question": "What is Acme Cloud's uptime SLA?",
+        "success": true,
+        "final_answer": "Acme Cloud uptime SLA: 99.9% monthly uptime.",
+        "n_steps": 4,
+        "e2e_latency_ms": 50.233,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": true,
+        "claim_coverage": 1.0
+      },
+      {
+        "scenario_id": "math-division",
+        "question": "What is 144 divided by 12?",
+        "success": true,
+        "final_answer": "144 divided by 12 = 12.0.",
+        "n_steps": 4,
+        "e2e_latency_ms": 10.281,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": false,
+        "claim_coverage": 0.0
+      },
+      {
+        "scenario_id": "weather-unknown",
+        "question": "What's the weather in Atlantis?",
+        "success": true,
+        "final_answer": "Sorry, I couldn't get the weather for Atlantis.",
+        "n_steps": 4,
+        "e2e_latency_ms": 80.257,
+        "tool_calls": 1,
+        "tool_errors": 1,
+        "grounded": false,
+        "claim_coverage": 0.4
+      },
+      {
+        "scenario_id": "refund",
+        "question": "Can I get a refund if I cancel my annual plan?",
+        "success": true,
+        "final_answer": "Annual plans: full refund within 30 days of purchase, prorated after.",
+        "n_steps": 4,
+        "e2e_latency_ms": 50.199,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": true,
+        "claim_coverage": 1.0
+      },
+      {
+        "scenario_id": "pricing-pro-year",
+        "question": "How much does the Pro plan cost per year?",
+        "success": false,
+        "final_answer": "The Pro plan costs $79/seat/mo.",
+        "n_steps": 4,
+        "e2e_latency_ms": 50.465,
+        "tool_calls": 1,
+        "tool_errors": 0,
+        "grounded": true,
+        "claim_coverage": 0.5
+      }
+    ]
+  }
+}
